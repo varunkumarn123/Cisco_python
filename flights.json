@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "number": "111",
+        "airline_name": "Indigo",
+        "seats": 50,
+        "price": 100000.0,
+        "source": "Bangalore",
+        "destination": "Hydrabad"
+    },
+    {
+        "id": 2,
+        "number": "222",
+        "airline_name": "Airbus",
+        "seats": 35,
+        "price": 120000.0,
+        "source": "Bangalore",
+        "destination": "Mangalore"
+    }
+]

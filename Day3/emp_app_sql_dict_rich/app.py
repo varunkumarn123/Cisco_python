@@ -21,9 +21,14 @@ Your Option:'''
         employee = {'id':id, 'name':name, 'age':age, 
                     'salary':salary, 'is_active':is_active}
 
-        repo.create_employee(employee)
-
-        print('Employee Created Successfully.')
+        try:
+            repo.create_employee(employee)
+            print('Employee Created Successfully.')
+        except repo.EmployeeAlreadyExistError as ex:
+            print(f'{ex}')
+        except repo.DatabaseError as ex:
+            print(f'{ex}')
+        
     elif choice == 2:
         print('List of Employees:')
         for employee in repo.read_all_employee():

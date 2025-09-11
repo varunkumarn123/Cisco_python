@@ -1,0 +1,44 @@
+2025-09-11 12:31:37,864 [INFO] BEGIN (implicit)
+2025-09-11 12:31:37,867 [INFO] INSERT INTO employees (id, name, age, salary, is_active) VALUES (?, ?, ?, ?, ?)
+2025-09-11 12:31:37,867 [INFO] [generated in 0.00046s] (126, 'Kiran', 23, 24000.0, 1)
+2025-09-11 12:31:37,879 [INFO] COMMIT
+2025-09-11 12:31:37,886 [INFO] employee created
+2025-09-11 12:32:33,954 [INFO] BEGIN (implicit)
+2025-09-11 12:32:33,955 [INFO] SELECT employees.id AS employees_id, employees.name AS employees_name, employees.age AS employees_age, employees.salary AS employees_salary, employees.is_active AS employees_is_active 
+FROM employees
+2025-09-11 12:32:33,955 [INFO] [generated in 0.00039s] ()
+2025-09-11 12:33:31,327 [INFO] SELECT employees.id AS employees_id, employees.name AS employees_name, employees.age AS employees_age, employees.salary AS employees_salary, employees.is_active AS employees_is_active 
+FROM employees 
+WHERE employees.id = ?
+ LIMIT ? OFFSET ?
+2025-09-11 12:33:31,327 [INFO] [generated in 0.00072s] (126, 1, 0)
+2025-09-11 12:33:31,328 [INFO] SELECT employees.id AS employees_id, employees.name AS employees_name, employees.age AS employees_age, employees.salary AS employees_salary, employees.is_active AS employees_is_active 
+FROM employees 
+WHERE employees.id = ?
+ LIMIT ? OFFSET ?
+2025-09-11 12:33:31,329 [INFO] [cached since 0.002059s ago] (126, 1, 0)
+2025-09-11 12:33:31,330 [INFO] DELETE FROM employees WHERE employees.id = ?
+2025-09-11 12:33:31,330 [INFO] [generated in 0.00043s] (126,)
+2025-09-11 12:33:31,340 [INFO] COMMIT
+2025-09-11 12:33:31,347 [INFO] employee deleted
+2025-09-11 14:23:33,044 [INFO] BEGIN (implicit)
+2025-09-11 14:23:33,046 [INFO] INSERT INTO employees (id, name, age, salary, is_active) VALUES (?, ?, ?, ?, ?)
+2025-09-11 14:23:33,046 [INFO] [generated in 0.00072s] (126, 'varun', 23, 38000.0, 1)
+2025-09-11 14:23:33,049 [INFO] COMMIT
+2025-09-11 14:23:33,057 [INFO] employee created
+2025-09-11 14:24:22,046 [INFO] BEGIN (implicit)
+2025-09-11 14:24:22,047 [INFO] INSERT INTO employees (id, name, age, salary, is_active) VALUES (?, ?, ?, ?, ?)
+2025-09-11 14:24:22,047 [INFO] [cached since 49s ago] (126, 'mahes', 23, 877398.0, 1)
+2025-09-11 14:24:22,047 [INFO] ROLLBACK
+2025-09-11 14:24:22,048 [ERROR] Duplicate employee id:(sqlite3.IntegrityError) UNIQUE constraint failed: employees.id
+[SQL: INSERT INTO employees (id, name, age, salary, is_active) VALUES (?, ?, ?, ?, ?)]
+[parameters: (126, 'mahes', 23, 877398.0, 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-11 14:42:30,175 [INFO] BEGIN (implicit)
+2025-09-11 14:42:30,177 [INFO] INSERT INTO employees (id, name, age, salary, is_active) VALUES (?, ?, ?, ?, ?)
+2025-09-11 14:42:30,177 [INFO] [generated in 0.00034s] (126, 'Varun', 23, 38000.0, 0)
+2025-09-11 14:42:30,178 [INFO] ROLLBACK
+2025-09-11 14:42:30,178 [ERROR] Duplicate employee id:(sqlite3.IntegrityError) UNIQUE constraint failed: employees.id
+[SQL: INSERT INTO employees (id, name, age, salary, is_active) VALUES (?, ?, ?, ?, ?)]
+[parameters: (126, 'Varun', 23, 38000.0, 0)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)

@@ -1,4 +1,4 @@
-import repo_sql_dict as repo
+from db import repo_sql_dict as repo
 
 def menu():
     message = '''
@@ -16,10 +16,10 @@ Your Option:'''
         name = input('Name:')
         age = int(input('Age:'))
         salary = float(input('Salary:'))
-        is_active = (input('Active(y/n):').upper() == 'Y')
+        is_active = input('Active(y/n):').upper() == 'Y'
 
-        employee = {'id':id, 'name':name, 'age':age, 
-                    'salary':salary, 'is_active':is_active}
+        employee = {'id':id,'name':name,'age':age, 
+            'salary':salary, 'is_active':is_active}
 
         try:
             repo.create_employee(employee)

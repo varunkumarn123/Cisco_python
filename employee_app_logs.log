@@ -42,3 +42,7 @@ WHERE employees.id = ?
 [SQL: INSERT INTO employees (id, name, age, salary, is_active) VALUES (?, ?, ?, ?, ?)]
 [parameters: (126, 'Varun', 23, 38000.0, 0)]
 (Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-15 11:09:55,601 [INFO] BEGIN (implicit)
+2025-09-15 11:09:55,607 [INFO] SELECT employees.id AS employees_id, employees.name AS employees_name, employees.age AS employees_age, employees.salary AS employees_salary, employees.is_active AS employees_is_active 
+FROM employees
+2025-09-15 11:09:55,607 [INFO] [generated in 0.00042s] ()

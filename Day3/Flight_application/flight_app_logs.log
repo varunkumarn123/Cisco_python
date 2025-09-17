@@ -1,0 +1,10 @@
+2025-09-17 06:21:24,325 [INFO] BEGIN (implicit)
+2025-09-17 06:21:24,329 [INFO] INSERT INTO flights (id, number, airline_name, capacity, price, source, destination, is_active) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2025-09-17 06:21:24,330 [INFO] [generated in 0.00091s] (100, 'IS001', 'Airbus', 40, 5000.0, 'Bangalore', 'Goa', 1)
+2025-09-17 06:21:24,336 [INFO] COMMIT
+2025-09-17 06:21:24,346 [INFO] Flight created.
+2025-09-17 06:22:19,136 [INFO] BEGIN (implicit)
+2025-09-17 06:22:19,137 [INFO] INSERT INTO flights (id, number, airline_name, capacity, price, source, destination, is_active) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+2025-09-17 06:22:19,146 [INFO] [cached since 54.82s ago] (101, 'IA005', 'Indigo', 60, 15000.0, 'Chennai', 'Dehli', 1)
+2025-09-17 06:22:19,151 [INFO] COMMIT
+2025-09-17 06:22:19,158 [INFO] Flight created.

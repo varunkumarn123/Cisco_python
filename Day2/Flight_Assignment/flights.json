@@ -1,0 +1,1 @@
+[{"id": 101, "number": "201", "airline_name": "Indigo", "capacity": 30, "price": 8000.0, "source": "Bengaluru", "destination": "Hydrabad"}, {"id": 102, "number": "202", "airline_name": "Qutar", "capacity": 50, "price": 12000.0, "source": "Bangalore", "destination": "Chennai"}]
